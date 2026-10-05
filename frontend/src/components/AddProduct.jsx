@@ -36,7 +36,7 @@ const AddProduct = () => {
     );
 
     axios
-      .post("http://localhost:8080/api/product", formData, {
+      .post("https://e-com-website-fi0f.onrender.com/product", formData, {
         headers: {
           "Content-Type": "multipart/form-data",
         },

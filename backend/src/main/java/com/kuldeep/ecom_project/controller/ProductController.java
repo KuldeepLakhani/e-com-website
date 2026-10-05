@@ -19,7 +19,7 @@ import java.sql.SQLOutput;
 import java.util.List;
 
 @RestController
-@CrossOrigin(origins = "http://localhost:5173")
+@CrossOrigin(origins = "https://e-com-website-sand.vercel.app/")
 @RequestMapping("/api")
 public class ProductController {
 
