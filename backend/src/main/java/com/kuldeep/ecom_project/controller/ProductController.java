@@ -124,7 +124,10 @@ public ResponseEntity<String> updateProduct(@PathVariable int id, @RequestPart("
        return new ResponseEntity<>("Failed to update",HttpStatus.BAD_REQUEST);
 }
 
-    @GetMapping("/products/search")
+    @GetMapping("/products" +
+            "" +
+            "   " +
+            "/a/search")
     public ResponseEntity<List<Product>> searchProduct(@RequestParam String keyword){
     System.out.println("searching with "+keyword);
     List<Product> products = service.serviceProducts(keyword);
